@@ -26,7 +26,7 @@ void moveMouse() {
 
 int main() {
 
-    idle_time = GetPrivateProfileInt(L"idle", L"idle_time", 0, L"config.ini");
+    idle_time = GetPrivateProfileInt("idle", "idle_time", 0, ".\\config.ini");
 
     if (idle_time != 0) {
         ShowWindow(GetConsoleWindow(), SW_HIDE);
